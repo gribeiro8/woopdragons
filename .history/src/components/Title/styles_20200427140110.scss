@@ -1,0 +1,13 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3em;
+  padding: 1.5em;
+  border-radius: 15px;
+
+  &__icon {
+    background-color: red;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,19 @@
+.carddragons {
+  li {
+    background: #FFF;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.5s;
+    
+  
+    &:hover {
+      box-shadow: 0 7px 34px 1px #c1bed1;
+      -webkit-box-shadow: 0 7px 34px 1px #c1bed1;
+      -moz-box-shadow: 0 7px 34px 1px #c1bed1;
+      -ms-box-shadow: 0 7px 34px 1px #c1bed1;
+  
+    }
+  }
+}
+

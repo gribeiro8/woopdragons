@@ -1,0 +1,39 @@
+.adddragon {
+  width: 100%;
+  max-width: 1120px;
+
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #e6e4e9;
+  border-radius: 8px;
+  padding: 3rem;
+  margin: 3em;
+  align-items: flex-start;
+  justify-content: space-between;
+
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  &__type {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__date {
+    margin-top: 15px;
+  }
+
+  &__history {
+
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 200px;
+
+  }
+  
+}

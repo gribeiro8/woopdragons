@@ -1,0 +1,9 @@
+.dragons {
+  width: 100%;
+  margin: 3em;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  list-style: none;
+}

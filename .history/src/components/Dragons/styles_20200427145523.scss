@@ -1,0 +1,12 @@
+.dragons {
+  width: 100%;
+  padding: 1.5em;
+  margin: 3em;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+  }
+}

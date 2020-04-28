@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 3em;
+  padding: 1.5em;
+  border-radius: 15px;
+
+  &__left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    ul li{
+      display: inline;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

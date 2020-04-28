@@ -1,0 +1,20 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3em;
+  padding: 1.5em;
+  border-radius: 15px;
+
+
+  &__icon {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

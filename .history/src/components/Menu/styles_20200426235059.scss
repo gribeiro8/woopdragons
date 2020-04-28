@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  &__left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    ul li{
+      display: inline;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    display: flexbox;
+    flex-direction: row;
+    text-align: right;
+    align-items: flex-end;
+  }
+}

@@ -1,3 +1,6 @@
+
+@import '../../stylesheets/medias';
+
 .adddragon {
   width: 100%;
   max-width: 1120px;
@@ -11,6 +14,27 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+
+    @include xs {
+      padding: 1rem;
+      flex-direction: column-reverse;
+    }
+
+    @include sm {
+      padding: 2rem;
+      flex-direction: column-reverse;
+    }
+
+    @include md {
+      padding: 2em;
+      flex-direction: row;
+      flex-direction: column-reverse;
+    }
+
+    @include lg {
+      padding: 3rem;
+      flex-direction: row;
+    }
 
     &__inputs {
       width: 100%;

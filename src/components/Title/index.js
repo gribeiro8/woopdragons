@@ -9,7 +9,7 @@ export default function Title(props) {
     <div className="title">
       <h1>{props.children}</h1>
       {props.icon ? '' : (
-        <Link to="/dragao/add">
+        <Link to="/dragon/add">
           <div className="title__icon">
             <FaPlus />
           </div>

@@ -1,20 +1,38 @@
-.form {
+@import '../../stylesheets/medias';
+
+.login-form {
   width: 100%;
   max-width: 1120px;
 
-  box-shadow: 0 7px 34px 1px #c1bed1;
-  -webkit-box-shadow: 0 7px 34px 1px #c1bed1;
-  -moz-box-shadow: 0 7px 34px 1px #c1bed1;
-  -ms-box-shadow: 0 7px 34px 1px #c1bed1;
-
   display: flex;
   background-color: #ffffff;
-  border: 1px solid #e6e4e9;
   border-radius: 8px;
   padding: 3rem;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+
+  @include xs {
+    padding: 1rem;
+    flex-direction: column-reverse;
+  }
+
+  @include sm {
+    padding: 2rem;
+    flex-direction: column-reverse;
+  }
+
+  @include md {
+    padding: 2em;
+    flex-direction: row;
+    flex-direction: column-reverse;
+  }
+
+  @include lg {
+    padding: 3rem;
+    flex-direction: row;
+  }
 
   &__inputs {
     width: 100%;
@@ -34,5 +52,6 @@
 
   &__img {
     width: 50%;
+
   }
 }

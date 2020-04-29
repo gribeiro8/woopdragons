@@ -25,7 +25,7 @@ export default function Dragons() {
           .concat(dragons)
           .sort((a, b) => a.name > b.name)
           .map((dragon) => (
-            <CardDragon dragon={dragon} />
+            <CardDragon key={dragon.id} dragon={dragon} />
           ))}
       </ul>
     </div>

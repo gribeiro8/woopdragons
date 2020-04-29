@@ -1,0 +1,31 @@
+@import '../../stylesheets/medias';
+
+.login {
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+
+    @include sm {
+      padding: 2rem;
+    }
+
+    &__logo {
+      img {
+        display: block;
+        width: 150px;
+        height: 52px;
+      }
+    }
+
+    &__container {
+      a {
+        font-weight: 500;
+        color: #383942;
+        font-size: 14px;
+        padding-left: 0.5rem;
+      }
+    }
+  }
+}

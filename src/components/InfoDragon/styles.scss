@@ -1,3 +1,5 @@
+@import '../../stylesheets/medias';
+
 .infodragon {
   width: 100%;
   max-width: 1120px;
@@ -8,6 +10,14 @@
   margin: 3em;
   align-items: flex-start;
   justify-content: space-between;
+
+  @include xs {
+    flex-direction: column-reverse;
+  }
+
+  @include sm {
+    flex-direction: row;
+  }
 
   &__title {
     font-size: 32px;
@@ -24,13 +34,20 @@
   }
 
   &__history {
-
   }
 
   &__img {
     width: 100%;
     max-width: 200px;
 
+    @include xs {
+      margin: 0 auto;
+      margin-bottom: 1em;
+    }
+
+    @include sm {
+      margin: 0;
+      margin-bottom: 0;
+    }
   }
-  
 }

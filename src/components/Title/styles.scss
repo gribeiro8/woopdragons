@@ -1,10 +1,28 @@
+@import '../../stylesheets/medias';
+
 .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 15px;
   width: 100%;
   max-width: 1120px;
+  color: black;
+
+  @include xs {
+    padding: 1em;
+  }
+
+  @include sm {
+    padding: 1em;
+  }
+
+  @include md {
+    padding: 1em;
+  }
+
+  @include lg {
+    padding: 0;
+  }
 
   &__icon {
     text-align: center;

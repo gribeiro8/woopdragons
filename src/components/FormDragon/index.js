@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './styles.scss';
 import api from '../../services/api';
 import { useHistory } from 'react-router-dom';
-import loginDragon from '../../assets/img/login-dragon.png';
+import familyDragon from '../../assets/img/family-dragon.jpg';
 
-export default function Dragons() {
+export default function Dragons({ actionType, idDragon }) {
+  const [id, setId] = useState(idDragon);
   const [name, setName] = useState('');
   const [type, setType] = useState('');
   const [histories, setHistories] = useState('');
@@ -24,15 +25,30 @@ export default function Dragons() {
     };
 
     try {
-      await api.post('dragon', data, {});
-
+      if (actionType === 'edit') {
+        await api.put(`dragon/${id}`, data, {});
+      } else {
+        await api.post('dragon', data, {});
+      }
       history.push('/dashboard');
     } catch (err) {
       console.log(err);
-      
       alert('Erro ao cadastrar caso, tente novamente.');
     }
   }
+
+  useEffect(() => {
+    if (actionType === 'edit') {
+      api.get(`dragon/${id}`).then((response) => {
+        console.log(response.data);
+        const dragon = response.data;
+        setName(dragon.name);
+        setType(dragon.type);
+        setHistories(dragon.histories);
+        //setDragon(response.data);
+      });
+    }
+  }, []);
 
   return (
     <div className="adddragon">
@@ -70,11 +86,11 @@ export default function Dragons() {
             />
 
             <button type="submit" className="button">
-              Adicionar
+             {(actionType==='add' ? 'Adicionar' : 'Editar' )}
             </button>
           </form>
         </div>
-        <img src={loginDragon} className="form__img" alt="dragon"/>
+        <img src={familyDragon} className="form__img" alt="dragon" />
       </section>
     </div>
   );

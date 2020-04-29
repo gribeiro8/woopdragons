@@ -27,9 +27,9 @@ export default function Routes() {
       <Switch>
         <Route path="/" exact component={Login} />
         <PrivateRoute path="/dashboard" component={Dashboard} />
-        <PrivateRoute path="/dragao/add"  component={NewDragon} />
-        <PrivateRoute path="/dragao/:id" exact component={Dragon} />
-        <PrivateRoute path="/dragao/edit/:id" component={NewDragon} />
+        <PrivateRoute path="/dragon/add"  component={NewDragon} />
+        <PrivateRoute path="/dragon/:id" exact component={Dragon} />
+        <PrivateRoute path="/dragon/edit/:id" component={NewDragon} />
       </Switch>
     </BrowserRouter>
   );

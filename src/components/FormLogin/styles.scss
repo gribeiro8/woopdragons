@@ -16,28 +16,35 @@
   @include xs {
     padding: 1rem;
     flex-direction: column-reverse;
+    padding-bottom: 50px;
+    border-radius: 0;
   }
 
   @include sm {
     padding: 2rem;
+    padding-bottom: 50px;
     flex-direction: column-reverse;
+    border-radius: 0;
   }
 
   @include md {
     padding: 2em;
+    padding-bottom: 50px;
     flex-direction: row;
     flex-direction: column-reverse;
+    border-radius: 0;
   }
 
   @include lg {
     padding: 3rem;
     flex-direction: row;
+    border-radius: 8px;
   }
 
   &__inputs {
     width: 100%;
     max-width: 450px;
-    margin-right: 30px;
+    margin: 0 auto;
 
     form input {
       width: 100%;
@@ -52,6 +59,5 @@
 
   &__img {
     width: 50%;
-
   }
 }
